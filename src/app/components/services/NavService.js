@@ -20,12 +20,12 @@
         sref: '.profile'
       },
       {
-        name: 'Table',
+        name: 'Projects',
         icon: 'view_module',
         sref: '.table'
       },
       {
-        name: 'Data Table',
+        name: 'Labor',
         icon: 'view_module',
         sref: '.data-table'
       }

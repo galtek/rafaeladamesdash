@@ -4,14 +4,16 @@
         <thead>
         <tr>
             <th>#</th>
-            <th>Issue</th>
-            <th>Status</th>
-            <th>Progress</th>
+            <th>Project</th>
+            <th>Info</th>
+            <th>Technology</th>
+            <th>Involve</th>
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="data in vm.tableData track by $index">
             <td data-title="ID">{{$index + 1}}</td>
+            <td data-title="Issue">{{data.name}}</td>
             <td data-title="Issue">{{data.issue}}</td>
             <td data-title="Status">{{data.status}}</td>
             <td data-title="Progress">

@@ -1,7 +1,7 @@
 <!-- TODO: Add validations -->
 <md-content md-theme="dark" class="md-padding" layout="row" layout-sm="column">
     <md-input-container>
-        <label>Username</label>
+        <label>Alias</label>
         <input ng-model="vm.user.title">
     </md-input-container>
     <md-input-container>
@@ -13,7 +13,7 @@
     <form name="userForm">
         <div layout layout-sm="column">
             <md-input-container flex="80">
-                <label>Company (Disabled)</label>
+                <label>Title</label>
                 <input ng-model="vm.user.company" disabled>
             </md-input-container>
             <md-input-container flex>
@@ -51,7 +51,7 @@
             </md-input-container>
         </div>
         <md-input-container flex>
-            <label>About us</label>
+            <label>About me</label>
             <textarea ng-model="vm.user.biography" columns="1"
                       md-maxlength="150"></textarea>
         </md-input-container>

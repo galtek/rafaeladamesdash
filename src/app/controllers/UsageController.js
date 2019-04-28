@@ -9,8 +9,8 @@
         var vm = this;
 
         // TODO: move data to the service
-        vm.ramChartData = [{key: 'Memory', y: 768660}, { key: 'Cache', y: 367404}, {key: 'Swap', y: 41924 }];
-        vm.storageChartData = [{key: 'System', y: 126560}, {key: 'Other', y: 224365 }];
+        vm.ramChartData = [{key: 'Enterprise', y: 14}, { key: 'Web Page', y: 8}];
+        vm.storageChartData = [{key: 'iOS', y: 6}, {key: 'Android', y: 4 }];
 
         vm.chartOptions = {
             chart: {
@@ -23,8 +23,8 @@
                 color: ['rgb(0, 150, 136)', '#E75753', 'rgb(235, 235, 235)'],
                 showLabels: false,
                 showLegend: false,
-                title: '83%',
-                margin: { top: -10, left: -20, right: -20 }
+                title: 'Years',
+                margin: { top: -5, left: -20, right: -20 }
             }
         };
     }

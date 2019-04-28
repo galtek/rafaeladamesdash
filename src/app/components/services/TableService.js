@@ -10,52 +10,109 @@
   function tableService($q){
     var tableData = [
       {
-        issue: 'Nested views',
-        progress: 100,
-        status: 'Done',
-        class: 'md-accent'
-      },
-      {
-        issue: 'Table component',
-        progress: 40,
-        status: 'Feedback',
-        class: ''
-      },
-      {
-        issue: 'Dashboard tiles',
-        progress: 100,
-        status: 'Done',
-        class: 'md-accent'
-      },
-      {
-        issue: 'Panel widget',
-        progress: 84,
-        status: 'In progress',
+        name: 'RISENWallet',
+        issue: 'Biometric Authenticator',
+        progress: 75,
+        status: 'iOS Swift',
         class: 'orange'
       },
       {
-        issue: 'Form',
+        name: 'Cafe Estudio',
+        issue: 'Company Web Page',
         progress: 100,
-        status: 'Done',
+        status: 'PHP Wordpress',
         class: 'md-accent'
       },
       {
-        issue: 'Custom CSS',
-        progress: 20,
-        status: 'Feedback',
-        class: ''
+        name: 'Klient',
+        issue: 'CRM',
+        progress: 100,
+        status: 'Android Kotlin',
+        class: 'md-accent'
       },
       {
-        issue: 'Add backend',
-        progress: 1,
-        status: 'To do',
+        name: 'SecMa',
+        issue: 'Building Managment',
+        progress: 100,
+        status: 'Python Django',
+        class: 'md-accent'
+      },
+      {
+        name: 'Letras&Tintas',
+        issue: 'Company Web Page',
+        progress: 100,
+        status: 'PHP Wordpress',
+        class: 'md-accent'
+      },
+      {
+        name: 'MigoIQ',
+        issue: 'BLE Beacon',
+        progress: 80,
+        status: 'iOS Swift',
+        class: 'orange'
+      },
+      {
+        name: 'FOG',
+        issue: 'Water Dept.: Inspection Managment',
+        progress: 85,
+        status: 'VB.net',
+        class: 'orange'
+      },
+      {
+        name: 'CERES',
+        issue: 'Debris and Reconstruction',
+        progress: 75,
+        status: 'C#',
+        class: 'orange'
+      },
+      {
+        name: 'United IFA APP',
+        issue: 'Insurance Loan',
+        progress: 35,
+        status: 'Java JSP',
         class: 'md-warn'
       },
       {
-        issue: 'Layout with sidebar',
+        name: 'toTrip',
+        issue: 'BLE Beacon',
         progress: 100,
-        status: 'Done',
+        status: 'iOS Swift',
         class: 'md-accent'
+      },
+      {
+        name: 'Spotery',
+        issue: 'Rent Location',
+        progress: 10,
+        status: 'Java Jasper PDF',
+        class: ''
+      },
+      {
+        name: 'JofCo Validzone',
+        issue: 'Company Web Page',
+        progress: 100,
+        status: 'HTML/CSS',
+        class: 'md-accent'
+      },
+      {
+        name: 'Clemente.com',
+        issue: 'Company Web Page',
+        progress: 100,
+        status: 'PHP Wordpress',
+        class: 'md-accent'
+      },
+      {
+        name: 'ProjectOX',
+        issue: 'Movie Application',
+        progress: 80,
+        status: 'MacOS ObjC',
+        class: 'orange'
+      },
+      {
+        name: 'IvuLoto',
+        issue: 'Treasury Dept.: POS tax',
+        progress: 65,
+        status: 'C++',
+        class: 'orange'
       }
     ];
 
@@ -72,7 +129,7 @@
        */
       loadByPagination: function (query) {
         query = query || {limit:10,page:1};
-         
+
         var list = [];
         var start = (query.page-1)*query.limit;
         var end = start + query.limit;

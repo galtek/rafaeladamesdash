@@ -12,7 +12,7 @@
 
         vm.buttonEnabled = false;
         vm.showProgress = false;
-        vm.reloadServer = 'Staging';
+        vm.reloadServer = 'iOS:Biometric Auth - OpenCV, Obj-C++, Swift, Keychain';
         vm.performProgress = performProgress;
         vm.determinateValue = 10;
 
@@ -31,8 +31,8 @@
 
         function showAlert() {
             alert = $mdDialog.alert({
-                title: 'Reloading done!',
-                content: vm.reloadServer + " server reloaded.",
+                title: 'Project Loaded',
+                content: vm.reloadServer,
                 ok: 'Close'
             });
             $mdDialog

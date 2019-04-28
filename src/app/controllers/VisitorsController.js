@@ -9,7 +9,8 @@
         var vm = this;
 
         // TODO: move data to the service
-        vm.visitorsChartData = [ {key: 'Mobile', y: 5264}, { key: 'Desktop', y: 3872} ];
+        vm.visitorsChartData = [ {key: 'Java/Android', y: 25}, { key: 'Swift/ObjC', y: 35},
+        {key: 'HTML/CSS/JS', y: 15}, {key: 'SQL/NoSQL', y: 15}, {key: 'C/C++/C#', y: 10}, ];
 
         vm.chartOptions = {
             chart: {
@@ -19,11 +20,11 @@
                 x: function (d) { return d.key; },
                 y: function (d) { return d.y; },
                 valueFormat: (d3.format(".0f")),
-                color: ['rgb(0, 150, 136)', '#E75753'],
+                color: ['rgb(0, 150, 136)', '#E75753', '#c0ca33', '#ff844c', '#00acc1'],
                 showLabels: false,
                 showLegend: false,
-                title: 'Over 9K',
-                margin: { top: -10 }
+                title: '< />',
+                margin: { top: -5 }
             }
         };
     }
