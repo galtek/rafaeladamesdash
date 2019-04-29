@@ -53,6 +53,6 @@
     "init": "npm install",
     "install": "bower install",
     "start": "node server.js",
-    "postinstall": "ng build --aot -prod"
+    "heroku-postbuild": "ng build --prod"
   }
 }
